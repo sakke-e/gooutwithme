@@ -77,7 +77,7 @@ function Home() {
   return (
     <StyledHome data-testid="container">
       <div className="home-container">
-        {bunnyState === "yes" ? <div className="title">Hasta la vista Baby  !!!!</div> : <div className="title">Will you go out with me?</div>}
+        {bunnyState === "yes" ? <div className="title">Rakastan sua pupu  !!!!</div> : <div className="title">Ootko mun valentine?</div>}
         <div className="animation">
           {bunnyState === "normal" && <Lottie options={bunnyPleaseOptions} height={300} width={300} />}
           {bunnyState === "cry" && <Lottie options={bunnyCryOptions} height={300} width={300} />}
@@ -85,7 +85,7 @@ function Home() {
           {bunnyState === "punch" && <Lottie options={bunnyPunchOptions} height={300} width={300} />}
         </div>
         {bunnyState !== "yes" && <div className="buttons">
-          <button onClick={() => setBunnyState("yes")} onMouseEnter={() => setBunnyState("normal")}>Yes</button>
+          <button onClick={() => setBunnyState("yes")} onMouseEnter={() => setBunnyState("normal")}>Kyllä</button>
           <Button
             $randomleft={randomPosition.randomLeft}
             $randomtop={randomPosition.randomTop}
@@ -94,7 +94,7 @@ function Home() {
             onMouseLeave={() => handleHover(false)}
 
           >
-            No
+            En
           </Button>
         </div>}
       </div>
